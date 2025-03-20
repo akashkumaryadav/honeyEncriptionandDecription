@@ -1,3 +1,4 @@
+import { ModeToggle } from "./modele-toggle";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -30,6 +31,9 @@ const TopNavigationMenu = () => {
         {/* Spacer to balance the layout */}
         <div className="flex flex-1" />
       </NavigationMenuList>
+      <span className="absolute right-4">
+        <ModeToggle />
+      </span>
     </NavigationMenu>
   );
 };
